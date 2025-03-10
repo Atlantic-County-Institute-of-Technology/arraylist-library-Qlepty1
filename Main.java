@@ -1,16 +1,16 @@
 import java.util.Collection;
 import java.util.Scanner;
 
-public class Main {
-    public static void main(String[] args) {
+public class Main {                                        
+    public static void main(String[] args) {        //creates a new library queue object
         Scanner scan = new Scanner(System.in);
         Library library = new Library();
 
-        System.out.print("1 Play\n2 Skip\n3 Add \n4 Remove \n5 Sort \n6 Shuffle \n7 Find \n8 Exit \n" );
+        System.out.print("1 Play\n2 Skip\n3 Add \n4 Remove \n5 Sort \n6 Shuffle \n7 Find \n8 Exit \n" );    // main queue menu
         int opt = scan.nextInt();
 
 
-        if(opt == 1) {
+        if(opt == 1) {                                                                    // if else ladder for every menu option 
             System.out.println("Now Playing"+ library.getNextItem());
         } else if (opt == 2) {
             System.out.println("Skipped");
